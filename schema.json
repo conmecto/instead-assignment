@@ -33,7 +33,7 @@
                             "income", "tax_and_credits", "payments", "refund", "amount_you_owe", "third_party_designee", "signature", 
                             "paid_preparer_only", "employer_information", "employee_information", "wage_information", "state_local_information", 
                             "third_party_information", "multiple_jobs_spouse_works", "claim_dependents", "other_adjustments", 
-                            "taxpayer_identification", "federal_tax_classification", "", "footer"
+                            "taxpayer_identification", "federal_tax_classification", "footer"
                         ]
                     },
                     "position": {
