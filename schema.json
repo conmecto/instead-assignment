@@ -1,0 +1,165 @@
+{   
+    "form_metadata": {
+        "form_id": "string",
+        "form_name": "string",
+        "form_year": "number",
+        "version": "number"
+    },
+    "pages": [
+        {
+            "page_number": "number",
+            "page_metadata": {
+                "page_id": "string",
+                "form_name": "string",
+                "form_year": "number",
+                "version": "number",
+                "page_size": {
+                    "width": "number",
+                    "height": "number",
+                    "units": {
+                        "type": "enum",
+                        "enum": ["inches", "points", "mm", "cm"]
+                    }
+                }
+            },
+            "sections": [
+                {
+                    "section_id": "string",
+                    "section_name": "string",
+                    "section_type": {
+                        "type": "enum",
+                        "enum": [
+                            "header", "personal_info", "filing_status", "digital_assets", "standard_deductions", "dependents", 
+                            "income", "tax_and_credits", "payments", "refund", "amount_you_owe", "third_party_designee", "signature", 
+                            "paid_preparer_only", "employer_information", "employee_information", "wage_information", "state_local_information", 
+                            "third_party_information", "multiple_jobs_spouse_works", "claim_dependents", "other_adjustments", 
+                            "taxpayer_identification", "federal_tax_classification", "", "footer"
+                        ]
+                    },
+                    "position": {
+                        "startX": "number",
+                        "startY": "number",
+                        "width": "number",
+                        "height": "number"
+                    },
+                    "fields": [
+                        {
+                            "field_id": "string",
+                            "label": "string",
+                            "field_type": {
+                                "type": "enum",
+                                "enum": ["text", "checkbox", "input"]
+                            },
+                            "input_mode": {
+                                "type": "enum",
+                                "enum": ["string", "number", "boolean", "date", "integer"]
+                            },
+                            "data_source": {
+                                "path": "string"
+                            },
+                            "position": {
+                                "startX": "number",
+                                "startY": "number",
+                                "width": "number",
+                                "height": "number"
+                            },
+                            "formatting": {
+                                "color": "string",
+                                "max_length": "string",
+                                "font_family": "string",
+                                "font_size": "number",
+                                "font_weight": "string",
+                                "text_align": "string",
+                                "text_stroke": "string",
+                                "text_transform": "string",
+                                "character_spacing": "number"
+                            },
+                            "input_segmentation": {
+                                "pattern": "string",
+                                "segments": [
+                                    {
+                                        "segment_index": "number",
+                                        "max_length": "number",
+                                        "position": {
+                                            "startX": "number",
+                                            "startY": "number", 
+                                            "width": "number",
+                                            "height": "number"
+                                        }
+                                    }
+                                ],
+                                "separators": [
+                                    {
+                                        "after_segment": "number",
+                                        "separator_char": "string",
+                                        "position": {
+                                            "startX": "number",
+                                            "startY": "number", 
+                                            "width": "number",
+                                            "height": "number"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "layout_elements": [
+                        {
+                            "element_id": "string",
+                            "element_type": {
+                                "type": "enum",
+                                "enum": ["line", "border", "separator", "image", "logo"]
+                            },
+                            "position": {
+                                "startX": "number",
+                                "startY": "number",
+                                "endX": "number",
+                                "endY": "number",
+                                "width": "number",
+                                "height": "number"
+                            },
+                            "properties": {
+                                "line_type": {
+                                    "type": "enum",
+                                    "enum": ["solid", "dotted", "dashed"]
+                                },
+                                "orientation": {
+                                    "type": "enum", 
+                                    "enum": ["horizontal", "vertical", "diagonal"]
+                                },
+                                "thickness": "number",
+                                "color": "string",
+                                "opacity": "number",
+                                "border_radius": "number",
+                                "fill_color": "string",
+                                "border_color": "string",
+                                "border_width": "number"
+                            }
+                        }
+                    ],
+                    "background_regions": [
+                        {
+                            "region_id": "string",
+                            "region_type": {
+                                "type": "enum",
+                                "enum": ["header", "section", "footer", "highlight"]
+                            },
+                            "position": {
+                                "startX": "number",
+                                "startY": "number", 
+                                "width": "number",
+                                "height": "number"
+                            },
+                            "styling": {
+                                "background_color": "string",
+                                "opacity": "number",
+                                "border_color": "string",
+                                "border_width": "number"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
