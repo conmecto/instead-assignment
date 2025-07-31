@@ -330,47 +330,24 @@ Implement validation for:
 
 ## Future Enhancements
 
-### Planned Features
 - **Conditional field display** - Show/hide fields based on other field values
+```json
+{
+  "visibility_condition": {
+    "if": "data.filing_status == 'Married Filing Separately'"
+  }
+}
+```
+- **Multi-language support** - Internationalization for form labels and instructions
+```json
+{
+  "label": {
+    "en": "Filing Status",
+    "es": "Estado civil",
+    "zh": "申报状态"
+  }
+}
+```
 - **Field calculations** - Automatic computation of derived values
 - **Validation rules** - Custom validation logic for complex field relationships
-- **Multi-language support** - Internationalization for form labels and instructions
 - **Digital signatures** - Electronic signature field support
-- **Form versioning** - Handle multiple versions of the same form type
-
-### Extensibility
-- **Custom field types** - Support for specialized input types
-- **Plugin architecture** - Allow custom formatting and validation functions
-- **Template inheritance** - Share common elements across similar forms
-- **Responsive layouts** - Adapt to different page sizes and orientations
-
-## Error Handling
-
-Applications should handle:
-- **Missing data paths** - Use fallback values or display errors
-- **Invalid coordinates** - Validate positions are within page boundaries
-- **Type mismatches** - Convert data types when possible, error otherwise
-- **Malformed annotations** - Provide clear error messages for schema violations
-
-## Best Practices
-
-1. **Use consistent naming** - Follow clear conventions for IDs and paths
-2. **Document data sources** - Provide clear mapping documentation
-3. **Test with real data** - Validate annotations with actual tax data
-4. **Version control** - Track changes to form annotations over time
-5. **Validate coordinates** - Ensure all positions are accurate and within bounds
-6. **Handle edge cases** - Plan for missing data, overflow text, and validation errors
-
-## Contributing
-
-When creating new form annotations:
-1. Follow the established schema structure
-2. Use meaningful section and field IDs
-3. Provide accurate positioning data
-4. Test with sample data
-5. Document any form-specific requirements
-6. Consider accessibility requirements
-
-## License
-
-This schema specification is designed for use in tax preparation and form processing applications. Please ensure compliance with IRS regulations and data privacy requirements when implementing.
